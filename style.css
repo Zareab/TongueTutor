@@ -1,103 +1,756 @@
-.html{
-    height:100%;
-    width:100%;
-}
-.container{
-    height:100vh;
-    width:100%;
-    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(loginimage.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-}
-
-.form-box{
-    width:80%;
-    max-width: 450px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    background: white;
-    padding: 50px 60px 70px;
-    text-align: center;
-}
-
-.form-box h1{
-    font-size: 40px;
-    margin-bottom: 70px;
-    color: purple;
-    position: relative;
-}
-
-.form-box h1::after{
-    content:'';
-    width:30px;
-    height:4px;
-    border-radius: 3px;
-    background: purple;
-    position: absolute;
-    bottom:-12px;
-    left:50%;
-    transform:translateX(-50%);
-
-}
-
-.input-field {
-    background: #eaeaea;
-    margin: 15px 0;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    max-height: 65px;
-    transition: max-height 0.5s;
-    overflow: hidden;
-
-}
-
-input {
-    width:100%;
-    background: transparent;
-    border: 0;
-    outline:0;
-    padding: 18px 15px;
-}
-
-.input-field i {
-    margin-left: 15px;
-    color: #999;
-}
-
-form p{
-    text-align: left;
-    font-size: 15px;
-}
-
-form p a{
-    text-decoration: none;
-    color: purple;
-}
-
-.btn-field {
+html {
+    height: 100%;
     width: 100%;
+  }
+  
+  /*homepage css below*/
+  
+  body, h1, p, ul, li, select, option {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  header {
+    background-color: #f0f0f0; 
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav li {
+    padding: 10px;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .login {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  
+  .search-container {
     display: flex;
     justify-content: center;
-}
-
-.btn-field button{
-    flex-basis: 45%;
-    background: purple;
-    color: white;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
+    align-items: center;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
     cursor: pointer;
-    transition: background 1s;
-}
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  
+ .footer {
+    background-color: white;
+    
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  
+  .footer-bottom {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: lightblue;
+  }
+  
+  
+  .footer-bottom p {
+    margin-bottom: 10px;
+  }
+  
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+  }
+  
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }
+  
+  
+  
+  
+  /*homepage css above*/ 
+  
+  /*course page css below */
+  
+  /* Reset some default styles */
+  body, h1, p, ul, li, select, option {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a box-sizing rule */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #f0f0f0; /* Adjust the color to match the provided image */
+  }
+  
+  /* Style the navigation menu */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav li {
+    padding: 10px;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .login {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Style the search container */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Style the course container */
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0p;
+  }
+  
+  .course1 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  
+  
+  }
+  .course2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course4 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course5 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course6 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course7 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course8 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course9 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course10 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .course1 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  
+  }
+  
+  .course2 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course3 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course4 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course5 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course6 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course7 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course8 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course9 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course10 img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .course-info {
+    text-align: left;
+  }
+  
+  .start-course {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the footer */
+  footer {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /*above is the css for coursepage*/
+  
+  
+  /* below is the css code for tutors */ 
+  
+  /* Reset some default styles */
+    body, h1, p, ul, li, select, option {
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Apply a box-sizing rule */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+  
+    /* Style the body */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    /* Style the header */
+    header {
+      background-color: #f0f0f0; /* Adjust the color to match the provided image */
+    }
+  
+    /* Style the navigation menu */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav {
+      list-style: none;
+      display: flex;
+    }
+  
+    .nav li {
+      padding: 10px;
+    }
+  
+    .nav li a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .login {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+      border: 1px solid black;
+    }
+  
+    /* Style the search container */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .search-container input[type="search"] {
+      padding: 5px;
+      margin-right: 10px;
+    }
+  
+    .search-container button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  
+    /* Style the main content area */
+    main {
+      padding: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .filters {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    select {
+      padding: 5px;
+      margin-right: 10px;
+    }
+  
+    /* Style the course container */
+    .tutor-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: indianred;
+    }
+  
+    .tutor1 {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    
+    .tutor2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor4 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor5 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor6 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor7 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor8 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor9 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+  .tutor10 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    }
+  
+    .tutor img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .tutor-info {
+      text-align: left;
+    }
+    .por_lec{
+    margin-top: -10px;
+  }
+  
+    .meet_the_tutor {
+      padding: 10px 10px;
+      cursor: pointer;
+    }
+  
+  
+    /* Style for eng lec  */ 
+  
+    .eng_lec{
+      margin-top: -10px;
+    }
+  
+    /* Style the footer */
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  
+  /* above is the css code for tutors*/
+  
+  
+  /*below is the css code for contact us page*/ 
+  
+  
+  .contactus {
+    background-image: url('../images/backgroundcolourcontact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.input-group{
-    height:250px;
-}
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to make the form more readable */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto; /* Centering the form */
+    max-width: 900px; /* Increase container width to accommodate the image */
+    display: flex; /* Setting container to flex layout */
+    justify-content: space-between; /* Add space between the form and the image */
+    align-items: center; /* Centering children vertically */
+  }
 
+  form {
+    flex: 1; /* Allow form to grow and shrink to fit available space */
+    margin-right: 20px; /* Add margin to separate the form from the image */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .image2 {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+  }
+  /* above is the css code for contact us*/
+  .heading{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .heading h1::after{
+    position:absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+    background-color: purple;
+  }
+
+  .heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+  }
+
+  .container-about{
+    width: 90%;
+    margin: 0 auto;
+    padding:10px 20px;
+  }
+
+  .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about-image{
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+
+  .about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+  }
+
+  .about-image:hover img{
+    transform: scale(1.2);
+  }
+
+  .about-content{
+    flex:1;
+  }
+
+  .about-content h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color:#333;
+  }
+
+  .about-content p{
+    font-size:18px;
+    line-height:1.5;
+    color:#666
+  } 
