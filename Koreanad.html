@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korean Learning Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .question {
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .backbtn{
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h2>한국어 고급 레벨 퀴즈 - hangug-eo gogeub lebel kwijeu (Korean Advanced Level Quiz)</h2> 
+            <form id="quizForm">
+               
+                <div class="question">
+                    <p>1. 내 여동생은 매일 학교에 갑니다. - nae yeodongsaengeun maeil hakgyoe gamnida. (My sister ________ to school every day.)</p> 
+                    <label for="q1_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">a) 가요 - gayo (goes)</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b) 가는 중 - ganeun jung (going)</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c) 갔어요 - gass-eoyo (gone)</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d) 갔어요 - gass-eoyo (went)</label>
+                </div>
+                
+                
+                <div class="question">
+                    <p>2. 그녀는 매일 아침 우유를 마십니다. - geunyeoneun maeil achim uyureul masimnida. (She ________ milk every morning.)</p>  
+                    <label for="q2_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">a) 마셔요 - masyeoyo (drinks)</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b) 마십니다 - masimnida (drink)</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c) 마시고 있어요 - masigo isseoyo (drinking)</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d) 마셨어요 - masyeosseoyo (drank)</label>
+                </div>
+        
+                
+                <div class="question">
+                    <p>3. 고양이가 양탄자 위에서 자고 있습니다. - goyang-iga yangtanja wieseo jago issseubnida. (The cat ________ on the mat)</p> 
+                    <label for="q3_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">a) 자요 - jayo (sleep)</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b) 자요 - jayo (sleeps)</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c) 자고 있어요 - jago isseoyo (sleeping)</label>
+                </div>
+    
+                <div class="question">
+                    <p>4. 지난 일요일에 그는 공원에 갔습니다. - Jinan il-yoile geuneun gong-won-e gassseubnida. (He ________ to the park last Sunday)</p> 
+                    <label for="q4_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br>
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">a) 갔어요 - gass-eoyo (went)</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b) 가고 있어요 - gago isseoyo (go)</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c) 가는 중 - ganeun jung (going)</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d) 갔어요 - gass-eoyo (gone)</label>
+                </div>
+            
+                        
+                           
+                <div class="question">
+                    <p>5. 태양이 하늘에 빛납니다. - Taeyang-i haneul-e bichnida. (The sun ________ in the sky)</p> 
+                    <label for="q5_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">a) 빛나요 - bichnayo (shines)</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b) 빛나고 있어요 - bichnago isseoyo (shining)</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c) 빛났어요 - bichnass-eoyo (shone)</label>
+                </div>
+    
+            
+                <div class="question">
+                    <p>6. 내 동생은 지금 책을 읽고 있어요. - Nae dongsaeng-eun jigeum chaeg-eul ilggo isseoyo. (My brother is ________)</p> 
+                    <label for="q6_options">올바른 동사를 선택하세요: - olbaneun dongsaleul seontaeghaseyo:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">a) 읽고 있어요 - ilggo isseoyo (reading)</label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b) 읽어요 - ilg-eoyo (reads)</label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c) 읽었어요 - ilg-eoss-eoyo (read)</label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">d) 읽었어요 - ilg-eoss-eoyo (readed)</label>
+                </div>
+                <button type="submit">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+        <button onclick="goBack()" class="backbtn"> < Back </button>
+    </div>
+</section>
+
+</section>
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value
+        
+    };
+
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'a',
+        q3: 'b',
+        q4: 'a',
+        q5: 'a',
+        q6: 'a'
+        
+    };
+
+    let score = 0;
+    let resultHTML = '<h3>Results:</h3>';
+
+    for (let question in answers) {
+        if (answers[question] === correctAnswers[question]) {
+            score++;
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: green;">Correct!</span></p>`;
+        } else {
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: red;">Incorrect. Correct answer: ${correctAnswers[question]}</span></p>`;
+        }
+    }
+
+    let feedback = '';
+
+if (score <= 2) {
+feedback = "You have to improve a lot.";
+} else if (score === 3 || score === 4) {
+feedback = "Well done but still scope of improvement.";
+} else if (score === 5) {
+feedback = "Excellent job!";
+} else if (score === 6) {
+feedback = "Outstanding Work!";
+}
+
+    resultHTML += `<p>Total Score: ${score} out of ${Object.keys(correctAnswers).length}</p>`;
+    resultHTML += `<p>Feedback: ${feedback}</p>`;
+    document.getElementById('result').innerHTML = resultHTML;
+});
+
+function goBack() {
+    window.location.href = "Courses_view.html";
+}
+</script>
+
+
+    
+
+</body>
+</html>
+    
+            
+            
+    

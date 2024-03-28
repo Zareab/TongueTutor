@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c91e308283.js" crossorigin="anonymous"></script>
+
+
+  <style>
+    /* Styles for navigation */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Achievements</h1>
+    <nav>
+      <ul>
+        <li><a href="Home_view.html">Home</a></li>
+        <li><a href="Courses_view.html">Course</a></li>
+        <li><a href="Tutors_view.html">Tutors</a></li>
+        <li><a href="User_Dashboard.html">User Dashboard</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="Contact_view.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>User Dashboard</h2>
+    <section class="user-info">
+      <h3>Name</h3>
+      <p>Zareab Shaikh</p>
+    </section>
+    <section class="course-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Score</th>
+            <th>Comment</th>
+            <th>Grades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>English Begineer level quiz</td>
+            <td>4/6</td>
+            <td>Well done but still scope of improvement.</td>
+            <td>B</td>
+          </tr>
+          
+        </tbody>
+      </table>
+   
+    </section>
+  </main>
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2024- By Zareab Shaik</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="User_Dashboard.js"></script>
+</body>
+</html>

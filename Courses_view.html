@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="../Controller/style.css">
+  <script src="https://kit.fontawesome.com/c91e308283.js" crossorigin="anonymous"></script>
+  <style>
+
+  </style>
+</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="Home_view.html">Home</a></li>           
+          <li><a href="Courses_view.html">Course</a></li>
+          <li><a href="Tutors_view.html">Tutors</a></li>
+          <li><a href="User_Dashboard.html">User Dashboard</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="Contact_view.html">Contact us</a></li>
+        </ul>
+        
+        <a href="signup.html" class="signup">Log in</a>
+        <a href="" class="logout" style="display: none;">Logout</a>
+        
+      </nav>
+    </header>
+
+    <main>
+      <h1>Course</h1>
+      <div class="filters">
+        <select name="language" id="language">
+          <option value="english">English</option>
+          <option value="portuguese">Portuguese</option>
+          <option value="hindi">Hindi</option>
+          <option value="spanish">Spanish</option>
+          <option value="arabic">Arabic</option>
+          <option value="italian">Italian</option>
+          <option value="mandarin">Mandarin</option>
+          <option value="polish">Polish</option>
+          <option value="korean">Korean</option>
+          <option value="japanese">Japanese</option>
+          <!-- Additional languages here -->
+        </select>
+        <select name="level" id="level">
+          <option value="beginner">Beginner</option>
+          <option value="advanced">Advanced</option>
+          <!-- Additional levels here -->
+        </select>
+      </div>
+
+      <div class="course-container">
+        <!-- Course 1 -->
+        <div class="course1">
+
+          <img src="../images/GBflag.png"  alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>English</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+            </div>
+          <div class="btn-course">
+            <button class="start-course" onclick="Englishpage()">Begin Quiz</button>
+          </div>
+    </div>
+    <!-- Course 2 -->
+    <div class="course2">
+      <img src="../images/Portflag.png" alt="Course Thumbnail">
+      <div class="course-info">
+        <h2>Portuguese</h2>
+        <p>Level of study: Beginner</p>
+        <p>Method of delivery: Online via MS Teams</p>
+
+        </div>
+       <div class="btn-course">
+        <button class="start-course" onclick="PortuguesePage()">Begin Quiz</button>
+         </div>
+    </div>
+
+        <!-- Course 3 -->
+        <div class="course3">
+          <img src="../images/Indflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Hindi</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Hindipage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course4">
+          <img src="../images/spainflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Spanish</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Spanishpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course5">
+          <img src="../images/saudiflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Arabic</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Arabicpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course6">
+          <img src="../images/italianflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Italian</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Italianpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="course7">
+          <img src="../images/chinaflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Mandarin</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Mandarinpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="course8">
+          <img src="../images/polandflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Polish</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Polishpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 9 -->
+        <div class="course9">
+          <img src="../images/koreanflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Korean</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Koreanpage()">Begin Quiz</button>
+             </div>
+        </div>
+
+        <!-- Course 10 -->
+        <div class="course10">
+          <img src="../images/japanflag.png" alt="Course Thumbnail">
+          <div class="course-info">
+            <h2>Japanese</h2>
+            <p>Level of study: Beginner</p>
+            <p>Method of delivery: Online via MS Teams</p>
+
+            </div>
+           <div class="btn-course">
+            <button class="start-course" onclick="Japanesepage()">Begin Quiz</button>
+             </div>
+        </div>
+    <!-- Additional course entries here -->
+  </div>
+    </main>
+      <footer>
+        <div class="footer-bottom">
+          <p>© 2024- By Zareab Shaik</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script>
+           function Englishpage() {
+        window.location.href = "English.html";
+    }
+    function PortuguesePage() {
+        window.location.href = "Portuguese.html";
+    }
+    function Hindipage() {
+        window.location.href = "Hindi.html";
+    }
+    function Spanishpage() {
+        window.location.href = "Spanish.html";
+    }
+    function Arabicpage() {
+        window.location.href = "arabic.html";
+    }
+    function Italianpage() {
+        window.location.href = "Italian.html";
+    }
+    function Mandarinpage() {
+        window.location.href = "Mandarin.html";
+    }
+    function Polishpage() {
+        window.location.href = "Polish.html";
+    }
+    function Koreanpage() {
+        window.location.href = "Korean.html";
+    }
+    function Japanesepage() {
+        window.location.href = "Japanese.html";
+    }
+
+      </script>
+  </body>
+  <script type="module" src="Courses_view.js"></script>
+  
+  </html>

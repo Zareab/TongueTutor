@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hindi Learning Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .question {
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .backbtn{
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h2>हिंदी माध्यम स्तर का क्विज़ (Hindi Advanced Level Quiz)</h2> 
+            <form id="quizForm">
+               
+                <div class="question">
+                    <p>1. मेरी बहन हर दिन स्कूल ________। (My sister ________ to school every day.)</p> 
+                    <label for="q1_options">सही क्रिया चुनें:</label><br> 
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">a) जाती है (goes)</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b) जा रही है (going)</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c) गई है (gone)</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d) गई (went)</label>
+                </div>
+                
+                
+                <div class="question">
+                    <p>2. वह हर सुबह दूध ________(She ________ milk every morning.)।</p>  
+                    <label for="q2_options">सही क्रिया चुनें:</label><br> 
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">a) पीती है (drinks)</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b) पी रही है (drink)</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c) पीता है (drinking)</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d) पी ली (drank)</label>
+                </div>
+        
+                
+                <div class="question">
+                    <p>3. बिल्ली ________ चटाई पर।(cat ________ on the mat)</p> 
+                    <label for="q3_options">सही क्रिया चुनें:</label><br> 
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">a) सोती है (sleep)</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b) सोता है (sleeps)</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c) सो रही है (sleeping)</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">d) सो ली (slept)</label>
+                </div>
+
+                <div class="question">
+                    <p>4. उन्होंने पिछले रविवार को पार्क ________।(He ________ the park last Sunday.)</p> 
+                    <label for="q4_options">सही क्रिया चुनें:</label><br>
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">a) गए (went)</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b) जाता है (go)</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c) जा रहा है (going)</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d) गया है (gone)</label>
+                </div>
+        
+                
+                           
+            <div class="question">
+                <p>5. सूरज आकाश में ______ (The sun shines in the sky)</p> 
+                <label for="q5_options">सही क्रिया चुनें:</label><br> 
+                <input type="radio" id="q5a" name="q5" value="a">
+                <label for="q5a">a) चमकता है (shines)</label><br>
+                <input type="radio" id="q5b" name="q5" value="b">
+                <label for="q5b">b) चमक रहा है (shining)</label><br>
+                <input type="radio" id="q5c" name="q5" value="c">
+                <label for="q5c">c) चमका (shone)</label><br>
+                <input type="radio" id="q5d" name="q5" value="d">
+                <label for="q5d">d) चमकना (shine)</label>
+            </div>
+    
+            
+            <div class="question">
+                <p>6. मेरा भाई अभी ________ रहा है। (My brother is reading)</p> 
+                <label for="q6_options">सही क्रिया चुनें:</label><br> 
+                <input type="radio" id="q6a" name="q6" value="a">
+                <label for="q6a">a) पढ़ता है (reads)</label><br>
+                <input type="radio" id="q6b" name="q6" value="b">
+                <label for="q6b">b) पढ़ रहा है (reading)</label><br>
+                <input type="radio" id="q6c" name="q6" value="c">
+                <label for="q6c">c) पढ़ा (read)</label><br>
+                <input type="radio" id="q6d" name="q6" value="d">
+                <label for="q6d">d) पढ़ लिया (readed)</label>
+            </div>
+            <button type="submit">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+        <button onclick="goBack()" class="backbtn"> < Back </button>
+    </div>
+</section>
+
+</section>
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value
+        
+    };
+
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'a',
+        q3: 'a',
+        q4: 'a',
+        q5: 'a',
+        q6: 'b'
+        
+    };
+
+    let score = 0;
+    let resultHTML = '<h3>Results:</h3>';
+
+    for (let question in answers) {
+        if (answers[question] === correctAnswers[question]) {
+            score++;
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: green;">Correct!</span></p>`;
+        } else {
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: red;">Incorrect. Correct answer: ${correctAnswers[question]}</span></p>`;
+        }
+    }
+
+    let feedback = '';
+
+if (score <= 2) {
+feedback = "You have to improve a lot.";
+} else if (score === 3 || score === 4) {
+feedback = "Well done but still scope of improvement.";
+} else if (score === 5) {
+feedback = "Excellent job!";
+} else if (score === 6) {
+feedback = "Outstanding Work!";
+}
+
+    resultHTML += `<p>Total Score: ${score} out of ${Object.keys(correctAnswers).length}</p>`;
+    resultHTML += `<p>Feedback: ${feedback}</p>`;
+    document.getElementById('result').innerHTML = resultHTML;
+});
+
+function goBack() {
+    window.location.href = "Courses_view.html";
+}
+</script>
+
+
+    
+
+</body>
+</html>
+    

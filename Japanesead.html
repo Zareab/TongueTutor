@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japanese Learning Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .question {
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .backbtn{
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h2>日本語上級レベルのクイズ - Nihongo jōkyū reberu no kuizu (Japanese Advanced Level Quiz)</h2> 
+            <form id="quizForm">
+               
+                <div class="question">
+                    <p>1. 私の妹は毎日学校に行きます。- tadhhab 'ukhti 'iilaa almadrasat kula yawm(My sister ________ to school every day.)</p> 
+                    <label for="q1_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">a) 行く - iku (goes)</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b) 行っている - itteiru (going)</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c) 行った - itta (gone)</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d) 行った - itta (went)</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. 彼女は毎朝ミルクを飲みます。- tashrab hi alhalib kulu sabahi.(She ________ milk every morning.)</p>  
+                    <label for="q2_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">a) 飲む - nomu (drinks)</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b) 飲んでいる - nondeiru (drink)</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c) 飲んでいた - nondeita (drinking)</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d) 飲んだ - nonda (drank)</label>
+                </div>
+    
+                <div class="question">
+                    <p>3. 猫は敷物の上で眠っています。- alqatu nayim ealaa alsajaadati.(The cat ________ on the mat)</p> 
+                    <label for="q3_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">a) 眠っている - nemutteiru (sleep)</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b) 眠っています - nemutteimasu (sleeps)</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c) 眠る - neru (sleeping)</label>
+                </div>
+    
+                <div class="question">
+                    <p>4. 彼は先週の日曜日に公園に行きました。- dhahab 'iilaa alhadiqat yawm al'ahad almadi. (He ________ to the park last Sunday)</p> 
+                    <label for="q4_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br>
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">a) 行った - itta (went)</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b) 行く - iku (go)</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c) 行っている - itteiru (going)</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d) 行っている - itteiru (gone)</label>
+                </div>
+    
+                <div class="question">
+                    <p>5. 太陽は空に輝いています。- alshams tushraq fi alsama'i. (The sun ________ in the sky)</p> 
+                    <label for="q5_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">a) 輝いています - kagayaiteimasu (shines)</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b) 輝く - kagayaku (shining)</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c) 輝きました - kagayakimashita (shone)</label>
+                </div>
+    
+                <div class="question">
+                    <p>6. 私の兄は今本を読んでいます。- 'akhi yaqra alan. (My brother is ________)</p> 
+                    <label for="q6_options">正しい動詞を選択してください：- aikhtar alfiel alsahiha:(Choose the correct verb:)</label><br> 
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">a) 読書 - dokusho (reading)</label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b) 読んでいます - yondeimasu (reads)</label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c) 読んでいます - yondeimasu (read)</label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">d) 読みました - yomimashita (readed)</label>
+                </div>
+                <button type="submit">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+        <button onclick="goBack()" class="backbtn"> < Back </button>
+    </div>
+</section>
+
+</section>
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value
+        
+    };
+
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'a',
+        q3: 'b',
+        q4: 'a',
+        q5: 'a',
+        q6: 'a'
+        
+    };
+
+    let score = 0;
+    let resultHTML = '<h3>Results:</h3>';
+
+    for (let question in answers) {
+        if (answers[question] === correctAnswers[question]) {
+            score++;
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: green;">Correct!</span></p>`;
+        } else {
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: red;">Incorrect. Correct answer: ${correctAnswers[question]}</span></p>`;
+        }
+    }
+
+    let feedback = '';
+
+if (score <= 2) {
+feedback = "You have to improve a lot.";
+} else if (score === 3 || score === 4) {
+feedback = "Well done but still scope of improvement.";
+} else if (score === 5) {
+feedback = "Excellent job!";
+} else if (score === 6) {
+feedback = "Outstanding Work!";
+}
+
+    resultHTML += `<p>Total Score: ${score} out of ${Object.keys(correctAnswers).length}</p>`;
+    resultHTML += `<p>Feedback: ${feedback}</p>`;
+    document.getElementById('result').innerHTML = resultHTML;
+});
+
+function goBack() {
+    window.location.href = "Courses_view.html";
+}
+</script>
+
+
+    
+
+</body>
+</html>
+    
+
+    
+    
+    

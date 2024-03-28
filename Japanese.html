@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japanese Learning Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+    }
+    .question {
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .backbtn{
+        margin-top: 20px;
+    }
+
+    .nextbtn {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .nextbtn:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+    <section class="main">
+        <div class="container">
+            <h2>日本語初級クイズ - Nihongo shokyū kuizu (Japanese Beginner Level Quiz)</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. "eat"の過去形は何ですか？- " Eat" no kako katachi wa nanidesu ka? (What is the past tense of "eat"?)</p>
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">a) 食べる (Taberu) - will eat</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b) 食べました (tabemashita) - ate</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c) 食べる (taberu) - eat</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d) 食べています (tabeteimasu) - eating</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. "cold"の反対語は何ですか？- " Cold" no hantaikotoba wa nanidesu ka?  (Which word means the opposite of "cold"?)</p>
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">a) 熱い (atsui) - hot</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b) 暖かい (atatakai) - warm</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c) 苦い (Nigai) - bitter</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d) 辛い (karai) - spicy</label>
+                </div>
+        
+                <div class="question">
+                    <p>3. "cat"の複数形は何ですか？- " Katto" no fukusūgata wa nanidesu ka? (What is the plural form of "cat"?)</p>
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">a) 猫達 (neko-tachi) - cats</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b) たくさんの猫 (Takusan no neko) - many cats</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c) 子猫 (Koneko) - kittens</label>
+                </div>
+        
+                <div class="question">
+                    <p>4. "write"の現在形は何ですか？ - " Raito" no genzai katachi wa nanidesu ka? (What is the present tense of "write"?)</p>
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">a) 書いた (kaita) - wrote</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b) 書いている (kaite iru) - writing</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c) 書かれた (kakareta) - written</label>
+                    
+                </div>
+        
+                <div class="question">
+                    <p>5. "happiness"の類義語は何ですか？ - " Happiness" no ruigigo wa nanidesu ka? (Which word is a synonym for "happiness"?)</p>
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">a) 悲しい (kanashii) - sad</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b) 怒っている (okotte iru) - angry</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c) 喜び (yorokobi) - joyful</label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">d) 疲れた (tsukareta) - tired</label>
+                </div>
+
+                <div class="question">
+                    <p>6. "big"の反対語は何ですか？ - " Big" no hantaikotoba wa nanidesu ka? (Which word means the opposite of "big"?)</p>
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">a) 小さい (chiisai) - small</label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b) 高い (takai) - tall</label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c) 大 (dai) - large</label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">d) 巨大な (kyodai na) - huge</label>
+                </div>
+
+                <button type="submit">Submit Quiz</button>
+            </form>
+
+            <div id="result"></div>
+            <button onclick="goBack()" class="backbtn"> < Back </button>
+            <button onclick="goToNext()" class="nextbtn">Next ></button>
+        
+    
+</div>
+</section>
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value
+        
+    };
+
+    const correctAnswers = {
+        q1: 'b',
+        q2: 'a',
+        q3: 'a',
+        q4: 'b',
+        q5: 'c',
+        q6: 'a'
+        
+    };
+
+    let score = 0;
+    let resultHTML = '<h3>Results:</h3>';
+
+
+
+    for (let question in answers) {
+        if (answers[question] === correctAnswers[question]) {
+            score++;
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: green;">Correct!</span></p>`;
+        } else {
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: red;">Incorrect. Correct answer: ${correctAnswers[question]}</span></p>`;
+        }
+    }
+
+    let feedback = '';
+
+if (score <= 2) {
+    feedback = "You have to improve a lot.";
+} else if (score === 3 || score === 4) {
+    feedback = "Well done but still scope of improvement.";
+} else if (score === 5) {
+    feedback = "Excellent job!";
+} else if (score === 6) {
+    feedback = "Outstanding Work!";
+}
+
+    resultHTML += `<p>Total Score: ${score} out of ${Object.keys(correctAnswers).length}</p>`;
+    resultHTML += `<p>Feedback: ${feedback}</p>`;
+    document.getElementById('result').innerHTML = resultHTML;
+});
+
+function goBack() {
+    window.location.href = "Courses_view.html";
+}
+
+function goToNext() {
+        window.location.href = "Japanesead.html";
+    }
+</script>
+</script>
+
+
+    
+
+</body>
+</html>
+    

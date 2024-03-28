@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italian Learning Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+    }
+    .question {
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .backbtn{
+        margin-top: 20px;
+    }
+
+    .nextbtn {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .nextbtn:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h2>Quiz di italiano livello principiante (Italian Beginner Level Quiz)</h2>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. Qual è la traduzione italiana di "hello"? (What is the Italian translation for "hello"?)</p>
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">a) ciao - hello</label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b) grazie - thank you</label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c) buongiorno - good morning</label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d) arrivederci - goodbye</label>
+                </div>
+
+                <div class="question">
+                    <p>2. Qual è la parola italiana per "yes"? (What is the Italian word for "yes"?)</p>
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">a) no - no</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b) sì - yes</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c) forse - maybe</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d) bene - good</label>
+                </div>
+
+                <div class="question">
+                    <p>3. Qual è la traduzione italiana di "thank you"? (What is the Italian translation for "thank you"?)</p>
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">a) ciao - hello</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b) grazie - thank you</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c) arrivederci - goodbye</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">d) per favore - please</label>
+                </div>
+
+                <div class="question">
+                    <p>4. Qual è la parola italiana per "dog"?(What is the Italian word for "dog"?)</p>
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">a) gatto - cat</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b) cavallo - horse</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c) cane - dog</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d) uccello - bird</label>
+                </div>
+
+                <div class="question">
+                    <p>5. Qual è la traduzione italiana di "arrivederci"? (What is the Italian translation for "goodbye"?)</p>
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">a) per favore - please</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b) arrivederci - goodbye</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c) grazie - thank you</label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">d) buongiorno - good morning</label>
+                </div>
+
+                <div class="question">
+                    <p>6. Qual è la traduzione italiana di "book"? (What is the Italian translation for "book"?)</p>
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">a) penna - pen</label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b) telefono - telephone</label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c) sedia - chair</label><br>
+                    <input type="radio" id="q6d" name="q6" value ="d">
+                    <label for="q6d">d) libro - book</label>
+                </div>
+
+                <button type="submit">Submit Quiz</button>
+            </form>
+
+            <div id="result"></div>
+            <button onclick="goBack()" class="backbtn"> < Back </button>
+            <button onclick="goToNext()" class="nextbtn">Next ></button>
+        
+    
+</div>
+</section>
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value,
+        q6: document.querySelector('input[name="q6"]:checked').value
+    };
+
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'b',
+        q3: 'b',
+        q4: 'c',
+        q5: 'b',
+        q6: 'd'
+    };
+
+    let score = 0;
+    let resultHTML = '<h3>Results:</h3>';
+
+    for (let question in answers) {
+        if (answers[question] === correctAnswers[question]) {
+            score++;
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: green;">Correct!</span></p>`;
+        } else {
+            resultHTML += `<p>Question ${question.slice(1)}: <span style="color: red;">Incorrect. Correct answer: ${correctAnswers[question]}</span></p>`;
+        }
+    }
+
+    let feedback = '';
+
+    if (score <= 2) {
+        feedback = "You have to improve a lot.";
+    } else if (score === 3 || score === 4) {
+        feedback = "Well done but still scope of improvement.";
+    } else if (score === 5) {
+        feedback = "Excellent job!";
+    } else if (score === 6) {
+        feedback = "Outstanding Work!";
+    }
+
+    resultHTML += `<p>Total Score: ${score} out of ${Object.keys(correctAnswers).length}</p><p>${feedback}</p>`;
+    resultHTML += `<p>Feedback: ${feedback}</p>`;
+    document.getElementById('result').innerHTML = resultHTML;
+});
+
+
+
+function goBack() {
+    window.location.href = "Courses_view.html";
+}
+
+function goToNext() {
+        window.location.href = "Italianad.html";
+    }
+</script>
+</script>
+
+
+    
+
+</body>
+</html>
